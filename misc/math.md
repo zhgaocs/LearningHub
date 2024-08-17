@@ -21,9 +21,21 @@ $$
 
     + 标准公式： $|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|$
 
-    + 非标准公式： $|A \cup B \cup C| = |A| + |B| + |C| - \text{只满足两条件情况数} - 2 \times |A \cap B \cap C|$
+    + 非标准公式： $|A \cup B \cup C| = |A| + |B| + |C| - |Ⅱ| - 2|Ⅲ|$
+
+    + $|A| + |B| + |C| = |Ⅰ| + 2|Ⅱ| + 3|Ⅲ|$
+
+其中：
++ $Ⅱ = (A \cap B - C) \cup (A \cap C - B) \cup (B \cap C - A)$
++ $Ⅲ = A \cap B \cap C$
 
 ## 路程、时间和速度
+
+1. 等距离平均速度
+
+$$
+\bar{v} = \frac{2v_1 \cdot v_2}{v_1 + v_2} 
+$$
 
 ## 数论
 
@@ -59,4 +71,3 @@ $$
 > 设 $n$ 条直线最多将平面划分为 $f(n)$ 个部分，显然 $f(1) = 2$  
 > 当 $n > 1$ 时， $f(n) = f(n-1) + n = \frac{n(n+1)}{2} + 1$  
 > $n = 1$也符合此式，故 $f(n) = \frac{n(n+1)}{{2}} + 1$
-
