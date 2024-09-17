@@ -38,6 +38,6 @@
 
 ### 1.4 Mask R-CNN
 
-## 2. SSD(Single Shot Detection)
+## 2. SSD(Single Shot MultiBox Detector)
 
 ## 3. YOLO(You Only Look Once)
