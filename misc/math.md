@@ -120,3 +120,31 @@ $$
 $$
 p = \frac{a+b+c}{2}
 $$
+
+## 分布
+
+1. 期望
+
+    + 超几何分布
+
+        + $P(X = k) = \frac{C_M^k \cdot C_{N-M}^{n-k}}{C_N^n}$
+
+        + $E(X) = \frac{n \cdot M}{N}$
+
+    + 二项分布
+
+        + $P(X = k) = C_n^k p^k (1-p)^{n-k}, \quad k = 0, 1, 2, \cdots$
+
+        + $E(X) = np$
+
+    + 几何分布
+
+        + $P(X = k) = (1-p)^{k-1} \cdot p, \quad k = 1, 2, 3, \cdots$
+
+        + $E(X) = \frac{1}{p}$
+
+    + 0-1分布
+
+        + $P(X = k) = p^k (1-p)^{1-k}, \quad k = 0 , 1$
+
+        + $E(X) = p$
