@@ -161,13 +161,19 @@
 
 2. 性质
 
-$
+$$
 (P \oplus Q) \oplus R = P \oplus (Q \oplus R)
-$
+$$
 
 #### 同或
 
-1. 真值表
+1. 与异或的关系
+
+$$
+P \odot Q = \overline{P \oplus Q}
+$$
+
+2. 真值表
 
 |    $P$     |    $Q$     | $P \odot Q$ |
 | :--------: | :--------: | :---------: |
@@ -176,12 +182,11 @@ $
 | $\text{F}$ | $\text{T}$ | $\text{F}$  |
 | $\text{F}$ | $\text{F}$ | $\text{T}$  |
 
-2. 性质
+3. 性质
 
-$
-P \odot Q = \overline{P \oplus Q} \\
+$$
 (P \odot Q) \odot R = P \odot (Q \odot R)
-$
+$$
 
 ## 公式等价
 
