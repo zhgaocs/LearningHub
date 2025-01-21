@@ -4,6 +4,9 @@
   + [析取](#析取)
   + [蕴含](#蕴含)
   + [等价](#等价)
+  + [扩展](#扩展)
+    + [异或](#异或)
+    + [同或](#同或)
 + [公式等价](#公式等价)
 
 ## 联结词
@@ -18,6 +21,21 @@
 | :--------: | :--------: |
 | $\text{T}$ | $\text{F}$ |
 | $\text{F}$ | $\text{T}$ |
+
+> [!WARNING]
+> 1. 命题的否定与否命题
+> 
+> |       命题        |       命题的否定       |           否命题            |
+> | :---------------: | :--------------------: | :-------------------------: |
+> |        $P$        |        $\neg P$        |              -              |
+> | $P \rightarrow Q$ | $P \rightarrow \neg Q$ | $\neg P \rightarrow \neg Q$ |
+>
+> 2. 全称量词与存在量词的否定
+> 
+> |       $P$        |       $\neg P$        |
+> | :--------------: | :-------------------: |
+> | $\forall x P(x)$ | $\exists x \neg P(x)$ |
+> | $\exists x P(x)$ | $\forall x \neg P(x)$ |
 
 ### 合取
 
@@ -127,6 +145,43 @@
 | $\text{T}$ | $\text{F}$ |      $\text{F}$       |
 | $\text{F}$ | $\text{T}$ |      $\text{F}$       |
 | $\text{F}$ | $\text{F}$ |      $\text{T}$       |
+
+### 扩展
+
+#### 异或
+
+1. 真值表
+
+|    $P$     |    $Q$     | $P \oplus Q$ |
+| :--------: | :--------: | :----------: |
+| $\text{T}$ | $\text{T}$ |  $\text{F}$  |
+| $\text{T}$ | $\text{F}$ |  $\text{T}$  |
+| $\text{F}$ | $\text{T}$ |  $\text{T}$  |
+| $\text{F}$ | $\text{F}$ |  $\text{F}$  |
+
+2. 性质
+
+$
+(P \oplus Q) \oplus R = P \oplus (Q \oplus R)
+$
+
+#### 同或
+
+1. 真值表
+
+|    $P$     |    $Q$     | $P \odot Q$ |
+| :--------: | :--------: | :---------: |
+| $\text{T}$ | $\text{T}$ | $\text{T}$  |
+| $\text{T}$ | $\text{F}$ | $\text{F}$  |
+| $\text{F}$ | $\text{T}$ | $\text{F}$  |
+| $\text{F}$ | $\text{F}$ | $\text{T}$  |
+
+2. 性质
+
+$
+P \odot Q = \overline{P \oplus Q} \\
+(P \odot Q) \odot R = P \odot (Q \odot R)
+$
 
 ## 公式等价
 
