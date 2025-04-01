@@ -258,7 +258,7 @@ $$
 $(\exists)A \rightarrow B, B \rightarrow C \Rightarrow (\exists)A \rightarrow C$
 
 > [!IMPORTANT]
-> $B$ 有存在量词（ $\exists$ ）时，$A$ 无论量词如何，均不能推出 $A \rightarrow C$
+> $B$ 有存在量词（ $\exists$ ）时， $A$ 无论量词如何，均不能推出 $A \rightarrow C$
 
 
 ### 两串推出
