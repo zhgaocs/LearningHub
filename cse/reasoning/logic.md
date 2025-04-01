@@ -1,13 +1,21 @@
-+ [联结词](#联结词)
-  + [否定](#否定)
-  + [合取](#合取)
-  + [析取](#析取)
-  + [蕴含](#蕴含)
-  + [等价](#等价)
-  + [扩展](#扩展)
-    + [异或](#异或)
-    + [同或](#同或)
-+ [公式等价](#公式等价)
++ [逻辑推理](#逻辑推理)
+  + [联结词](#联结词)
+    + [否定](#否定)
+    + [合取](#合取)
+    + [析取](#析取)
+    + [蕴含](#蕴含)
+    + [等价](#等价)
+    + [扩展](#扩展)
+      + [异或](#异或)
+      + [同或](#同或)
+  + [公式等价](#公式等价)
+  + [集合推理](#集合推理)
+    + [基本命题](#基本命题)
+    + [换位规则](#换位规则)
+    + [递推规则](#递推规则)
+    + [两串推出](#两串推出)
+
+# 逻辑推理
 
 ## 联结词
 
@@ -226,3 +234,33 @@ $$
 |           |               $P \land(P \lor Q) \Leftrightarrow P$               |
 | 德•摩根律 |       $\neg (P \lor Q) \Leftrightarrow \neg P \land \neg Q$       |
 |           |       $\neg (P \land Q) \Leftrightarrow \neg P \lor \neg Q$       |
+
+## 集合推理
+
+### 基本命题
+
+1. 所有 $S$ 都是 $P$ ： $S \rightarrow P$
+2. 所有 $S$ 都不是 $P$ ： $S \rightarrow \neg P$
+3. 有的 $S$ 是 $P$ ： $\exists S \rightarrow P$
+4. 有的 $S$ 不是 $P$ ： $\exists S \rightarrow \neg P$
+
+### 换位规则
+
+1. $S \rightarrow P \Rightarrow \exists P \rightarrow S$
+2. $S \rightarrow \neg P \Leftrightarrow P \rightarrow \neg S$
+3. $\exists S \rightarrow P \Leftrightarrow \exists P \rightarrow S$
+
+> [!IMPORTANT]
+> $\exists S \rightarrow \neg P$ 无法换位
+
+### 递推规则
+
+$(\exists)A \rightarrow B, B \rightarrow C \Rightarrow (\exists)A \rightarrow C$
+
+> [!IMPORTANT]
+> $B$ 有存在量词（ $\exists$ ）时，$A$ 无论量词如何，均不能推出 $A \rightarrow C$
+
+
+### 两串推出
+
+$S \rightarrow (\neg) P \Rightarrow \exists S \rightarrow (\neg) P$
