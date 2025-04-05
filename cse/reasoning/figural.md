@@ -98,6 +98,7 @@
 + 切点
 + 曲线数
 + 位置关系（多个圆）
+
 ![位置关系](images/positional_relationship.png)
 
 #### 1.3.2 字母
@@ -137,8 +138,11 @@
 
 + 相邻保持不变的位置、数目
 + 相邻对折
+
 ![相邻对折](images/adjacent_fold.png)
+
 + 相邻互补
+
 ![相邻互补](images/adjacent_comparison.png)
 
 ## 3. 样式规律
@@ -198,6 +202,7 @@
 > 部分数指图中不连通的独立部分数量
 
 + 堆内元素数量
+
 ![堆内元素数量](images/elems_in_heap.png)
 
 ### 5.2 素
@@ -278,6 +283,7 @@
 ---
 
 数量规律的交替性
+
 ![数量规律的交替性](images/alternation.png)
 
 ---
