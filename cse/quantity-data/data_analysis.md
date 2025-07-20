@@ -4,11 +4,15 @@
     + [年均增长量](#年均增长量)
   + [增长率](#增长率)
     + [名义增长率与实际增长率](#名义增长率与实际增长率)
+    + [拉动增长率](#拉动增长率)
     + [间隔增长率](#间隔增长率)
     + [年均增长率](#年均增长率)
   + [比重](#比重)
     + [基期比重](#基期比重)
     + [两期比重（差）](#两期比重差)
+  + [速算](#速算)
+    + [百化分](#百化分)
+    + [分数比较](#分数比较)
 
 # 资料分析
 
@@ -25,20 +29,33 @@ $$
 + $r(rate)$ ：增长率
 
 > [!TIP]
-> 当 $|r| \leq 5\\%$ 时， $\frac{C}{1+r} = \frac{C(1-r)}{(1+r)(1-r)} \approx C(1-r)$
+> 当 $|r| \leq 5\%$ 时， $\displaystyle \frac{C}{1+r} = \frac{C(1-r)}{(1+r)(1-r)} \approx C(1-r)$
 > 
-> 适用范围**不**包括：选项首位相同，第二位也相同，**且** $4\\% \leq |r| \leq 5\\%$
+> 适用范围**不**包括：选项首位相同，第二位也相同，**且** $4\% \leq |r| \leq 5\%$
 
 ## 增长量
 
 $$
-C-B = C \cdot \frac{r}{1+r}
+\Delta = B \cdot r = \frac{C}{1+r} \cdot r
 $$
+
+> [!TIP]
+> $$
+> \left.
+> \Delta = 
+> \begin{cases}
+> \displaystyle\frac{C}{\rho+1}, & r > 0 \\
+> \displaystyle-\frac{C}{\rho-1}, & r < 0
+> \end{cases}
+> \right\} \quad \text{if } |r| = \frac{1}{\rho}
+> $$
+
+
 
 ### 年均增长量
 
 $$
-\Delta_{avg} = C \cdot \frac{r}{n(1+r)}
+\Delta_{\mathrm{avg}} = C \cdot \frac{r}{n(1+r)}
 $$
 
 其中：
@@ -50,19 +67,25 @@ $$
 ### 名义增长率与实际增长率
 
 $$
-1 + r_{nominal} = (1 + r_{real})(1 + r_{CPI})
+1 + r_n = (1 + r_r)(1 + \pi)
 $$
 
 其中：
 
-+ $r_{nominal}$ ：名义增长率
-+ $r_{real}$ ：实际增长率
-+ $r_{CPI}$ ：CPI增长率 
++ $r_n$ ：名义增长率
++ $r_r$ ：实际增长率
++ $\pi$ ：通货膨胀率
+
+### 拉动增长率
+
+$$
+r_{\mathrm{pull}} = \frac{\Delta}{B}
+$$
 
 ### 间隔增长率
 
 $$
-r_{interval} = \frac{C}{B} -1 = \frac{B \cdot (1+r_1)(1+r_2)}{B} -1 = r_1 + r_2 + r_1 \cdot r_2
+r_i = \frac{C}{B} -1 = \frac{B \cdot (1+r_1)(1+r_2)}{B} -1 = r_1 + r_2 + r_1 \cdot r_2
 $$
 
 其中：
@@ -72,7 +95,7 @@ $$
 ### 年均增长率
 
 $$
-r_{avg} = (\frac{C}{B})^{\frac{1}{n}} - 1
+r_{\mathrm{avg}} = (\frac{C}{B})^{\frac{1}{n}} - 1
 $$
 
 ## 比重
@@ -93,9 +116,18 @@ $$
 ### 两期比重（差）
 
 $$
-\frac{S}{T} - \frac{S}{T} \cdot \frac{1+t}{1+s} = \mathbf{\frac{S}{T} \cdot \frac{s-t}{1+s}}
+\frac{S}{T} - \frac{S}{T} \cdot \frac{1+t}{1+s} = \frac{S}{T} \cdot \frac{s-t}{1+s}
 $$
 
----
+## 速算
+
+### 百化分
 
 ![百化分](images/percent2frac.png)
+
+### 分数比较
+
+> [!TIP]
+> 分子快，分子大的分数大
+> 
+> 分母快，分母大的分数小
