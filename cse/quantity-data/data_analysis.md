@@ -125,6 +125,34 @@ $$
 
 ![百化分](images/percent2frac.png)
 
+
+| 百分数 |             分数              |
+| -----: | :---------------------------: |
+|  18.2% | $\displaystyle\frac{1}{5.5}$  |
+|  16.7% |  $\displaystyle\frac{1}{6}$   |
+|  15.4% | $\displaystyle\frac{1}{6.5}$  |
+|  14.3% |  $\displaystyle\frac{1}{7}$   |
+|  13.3% | $\displaystyle\frac{1}{7.5}$  |
+|  12.5% |  $\displaystyle\frac{1}{8}$   |
+|  11.8% | $\displaystyle\frac{1}{8.5}$  |
+|  11.1% |  $\displaystyle\frac{1}{9}$   |
+|  10.5% | $\displaystyle\frac{1}{9.5}$  |
+|   9.1% |  $\displaystyle\frac{1}{11}$  |
+|   8.7% | $\displaystyle\frac{1}{11.5}$ |
+|   8.3% |  $\displaystyle\frac{1}{12}$  |
+|     8% | $\displaystyle\frac{1}{12.5}$ |
+|   7.7% |  $\displaystyle\frac{1}{13}$  |
+|   7.4% | $\displaystyle\frac{1}{13.5}$ |
+|   7.1% |  $\displaystyle\frac{1}{14}$  |
+|   6.9% | $\displaystyle\frac{1}{14.5}$ |
+|   6.7% |  $\displaystyle\frac{1}{15}$  |
+|   6.5% | $\displaystyle\frac{1}{15.5}$ |
+|  6.25% |  $\displaystyle\frac{1}{16}$  |
+|   6.1% | $\displaystyle\frac{1}{16.5}$ |
+|   5.9% |  $\displaystyle\frac{1}{17}$  |
+|   5.6% |  $\displaystyle\frac{1}{18}$  |
+|   5.3% |  $\displaystyle\frac{1}{19}$  |
+
 ### 分数比较
 
 > [!TIP]
