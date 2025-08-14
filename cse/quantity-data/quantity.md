@@ -36,16 +36,30 @@ $$
 
 1. 三集合
 
-    + 标准公式： $|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|$
+$$
+\begin{aligned}
+|A \bigcup B \bigcup C| &= |A| + |B| + |C| - |A \bigcap B| - |A \bigcap C| - |B \bigcap C| + |A \bigcap B \bigcap C| \\
+&= |A| + |B| + |C| - n_2 - 2n_3 \\
+&= |A| + |B| + |C| - n_{\geq2} - n_3
+\end{aligned}
+$$
 
-    + 非标准公式： $|A \cup B \cup C| = |A| + |B| + |C| - |Ⅱ| - 2|Ⅲ|$
+|    符号     |            含义             |
+| :---------: | :-------------------------: |
+|    $n_1$    | 恰好属于 1 个集合的元素个数 |
+|    $n_2$    | 恰好属于 2 个集合的元素个数 |
+|    $n_3$    | 恰好属于 3 个集合的元素个数 |
+| $n_{\geq2}$ | 属于至少 2 个集合的元素个数 |
 
-    + $|A| + |B| + |C| = |Ⅰ| + 2|Ⅱ| + 3|Ⅲ|$
+> [!TIP]
+> $|A| + |B| + |C| = n_1 + 2n_2 + 3n_3$
 
-其中：
+2. 集合交集下界估计
 
-+ $Ⅱ = (A \cap B - C) \cup (A \cap C - B) \cup (B \cap C - A)$
-+ $Ⅲ = A \cap B \cap C$
+$$
+|A_i| \ge a_i \\
+\left| \bigcap_{i=1}^k A_i \right| \ge \sum_{i=1}^k a_i - (k-1)|U|
+$$
 
 ## 行程问题
 
