@@ -181,14 +181,14 @@ $$
 
 2. $N$ 行 $N$ 列方阵
     + 最外圈元素数： $4N-4$
-    + 圈数： $\displaystyle \lfloor \frac{N}{2} \rfloor$
+    + 圈数： $\displaystyle \left\lfloor \frac{N}{2} \right\rfloor$
     + 相邻两圈相差：8
     + 一行一列： $2N-1$
 
 3. 空瓶换酒： $M$ 个空瓶可以换 $N$ 瓶酒，现有 $x$ 个空瓶，在**不赊账**的前提下能换多少瓶酒？其中 $M$ 、 $N$ 、 $x$ 都是正整数，且 $M > N$
 
 $$
-\left\lfloor \frac{x}{M - N} \right\rfloor \cdot N
+\left\lfloor \frac{x-N}{M - N} \right\rfloor \cdot N
 $$
 
 4. 钟表
