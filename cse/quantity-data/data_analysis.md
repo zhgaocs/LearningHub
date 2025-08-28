@@ -1,9 +1,11 @@
 + [资料分析](#资料分析)
-  + [基期与现期](#基期与现期)
-  + [增长量](#增长量)
-    + [年均增长量](#年均增长量)
-  + [增长率](#增长率)
-    + [名义增长率与实际增长率](#名义增长率与实际增长率)
+  + [基础公式](#基础公式)
+  + [比较与计算](#比较与计算)
+    + [基期量](#基期量)
+    + [增长量](#增长量)
+    + [增长率](#增长率)
+  + [特殊增长率](#特殊增长率)
+    + [名义/实际增长率](#名义实际增长率)
     + [拉动增长率](#拉动增长率)
     + [间隔增长率](#间隔增长率)
     + [年均增长率](#年均增长率)
@@ -19,28 +21,26 @@
 
 # 资料分析
 
-## 基期与现期
+## 基础公式
 
 $$
-B = \frac{C}{1+r}
+\begin{aligned}
+B &= \frac{C}{1+r} \\
+\Delta &= \frac{C}{1+r} \cdot r \\
+r &= \frac{\Delta}{B} = \frac{\Delta}{C - \Delta}
+\end{aligned}
 $$
 
-其中：
+## 比较与计算
 
-+ $B(Base)$ ：基期量
-+ $C(Current)$ ：现期量
-+ $r(rate)$ ：增长率
+### 基期量
 
 > [!TIP]
 > 当 $|r| \leq 5\%$ 时， $\displaystyle \frac{C}{1+r} = \frac{C(1-r)}{(1+r)(1-r)} \approx C(1-r)$
 > 
 > 适用范围**不**包括：选项首位相同，第二位也相同，**且** $4\% \leq |r| \leq 5\%$
 
-## 增长量
-
-$$
-\Delta = B \cdot r = \frac{C}{1+r} \cdot r
-$$
+### 增长量
 
 > [!TIP]
 > $$
@@ -53,21 +53,18 @@ $$
 > \right\} \quad \text{if } |r| = \frac{1}{\rho}
 > $$
 
+### 增长率
 
+> [!TIP]
+> $\displaystyle \frac{\Delta}{C}$ 越大， $r$ 越大
+> 
+> $$
+> r = \frac{1}{\frac{C}{\Delta}-1}
+> $$
 
-### 年均增长量
+## 特殊增长率
 
-$$
-\Delta_{\mathrm{avg}} = C \cdot \frac{r}{n(1+r)}
-$$
-
-其中：
-
-+ $n$ ：时间跨度（年数）
-
-## 增长率
-
-### 名义增长率与实际增长率
+### 名义/实际增长率
 
 $$
 1 + r_n = (1 + r_r)(1 + \pi)
@@ -88,10 +85,8 @@ $$
 ### 间隔增长率
 
 $$
-r_i = \frac{C}{B} -1 = \frac{B \cdot (1+r_1)(1+r_2)}{B} -1 = r_1 + r_2 + r_1 \cdot r_2
+r_i = \frac{C}{B} -1 = \frac{B \cdot (1+r_1)(1+r_2)}{B} -1 = \boxed{ r_1 + r_2 + r_1 \cdot r_2 }
 $$
-
-其中：
 
 + $r_1, r_2$ ：相邻增长率
 
@@ -106,26 +101,19 @@ $$
 ### 基期比重（均值）
 
 $$
-\frac{A}{1+a} \div \frac{B}{1+b} = \frac{A}{B} \cdot \frac{1+b}{1+a}
+\frac{A}{1+a} \div \frac{B}{1+b} = \boxed{ \frac{A}{B} \cdot \frac{1+b}{1+a} }
 $$
-
-其中：
-
-+ $A$ ：现期部分量
-+ $B$ ：现期整体量
-+ $a$ ：部分量的增长率
-+ $b$ ：整体量的增长率
 
 ### 两期比重（均值）
 
 $$
-\frac{A}{B} - \frac{A}{B} \cdot \frac{1+b}{1+a} = \frac{A}{B} \cdot \frac{a-b}{1+a}
+\frac{A}{B} - \frac{A}{B} \cdot \frac{1+b}{1+a} = \boxed{ \frac{A}{B} \cdot \frac{a-b}{1+a} }
 $$
 
 ### 均值增长率
 
 $$
-r_\mathrm{avg} = \frac{a-b}{1+b}
+\boxed{ r_\mathrm{avg} = \frac{a-b}{1+b} }
 $$
 
 ## 速算
