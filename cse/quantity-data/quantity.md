@@ -73,6 +73,12 @@ $$
 p = \frac{a+b+c}{2}
 $$
 
+5. 截面
+
+[images/cube.jpg](立方体截面)
+[images/cylinder.jpg](圆柱截面)
+[images/cone.jpg](圆锥截面)
+
 ## 行程
 
 1. 多次相遇总路程
