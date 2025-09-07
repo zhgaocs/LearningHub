@@ -75,9 +75,14 @@ $$
 
 5. 截面
 
-[images/cube.jpg](立方体截面)
-[images/cylinder.jpg](圆柱截面)
-[images/cone.jpg](圆锥截面)
+![立方体截面](images/cube.jpg)
+
+![圆柱截面](images/cylinder.jpg)
+
+![圆锥截面](images/cone.jpg)
+
+> [!TIP]
+> 立方体截面中，三角形**只可能**为锐角三角形，五边形**不可能**为正五边形
 
 ## 行程
 
