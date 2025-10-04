@@ -149,6 +149,15 @@ $$
 |   5.9% |  $\displaystyle\frac{1}{17}$  |
 |   5.6% |  $\displaystyle\frac{1}{18}$  |
 |   5.3% |  $\displaystyle\frac{1}{19}$  |
+|   4.8% |  $\displaystyle\frac{1}{21}$  |
+|   4.5% |  $\displaystyle\frac{1}{22}$  |
+|   4.3% |  $\displaystyle\frac{1}{23}$  |
+|   4.2% |  $\displaystyle\frac{1}{24}$  |
+|   3.8% |  $\displaystyle\frac{1}{26}$  |
+|   3.7% |  $\displaystyle\frac{1}{27}$  |
+|   3.6% |  $\displaystyle\frac{1}{28}$  |
+|   3.4% |  $\displaystyle\frac{1}{29}$  |
+|   3.3% |  $\displaystyle\frac{1}{30}$  |
 
 ### 平方数
 
