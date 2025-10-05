@@ -130,6 +130,25 @@ $$
 \left| \bigcap_{i=1}^k A_i \right| \ge \sum_{i=1}^k a_i - (k-1)|U|, \quad \text{where } |A_i| \ge a_i
 $$
 
+3. 设有 $n$ 个人，第 $i$ 个人独立完成的任务数分别为 $x_i$ ，第 $i$ 个人没有参与的任务数分别为 $A_i$ , 其中 $i \in \{ 1, 2, \cdots, n \}$ ，则：
+
+$$
+x_i = \frac{A_1 + A_2 + \cdots + A_n}{n-1} - A_i
+$$
+
+特别地，当 $n=3$时，
+
+$$
+x_1 = \frac{A_2 + A_3 - A_1}{2}
+$$
+
+
+> [!TIPS]
+> $$
+> x_1 + x_2 + \cdots + x_n \triangleq N = (N - A_1) + (N - A_2) + \cdots (N - A_n) \\
+\implies A_1 + A_2 + \cdots + A_n = (n-1)N \\
+\implies x_i = N - A_i = \frac{A_1 + A_2 + \cdots + A_n}{n-1} - A_i
+> $$
 
 ## 排列组合
 
