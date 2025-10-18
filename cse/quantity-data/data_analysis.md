@@ -1,14 +1,13 @@
 + [资料分析](#资料分析)
-  + [基础公式](#基础公式)
-  + [比较与计算](#比较与计算)
-    + [基期量](#基期量)
+  + [基期、增长量、增长率](#基期增长量增长率)
+    + [基期](#基期)
     + [增长量](#增长量)
-    + [增长率](#增长率)
-  + [特殊增长率](#特殊增长率)
-    + [名义/实际增长率](#名义实际增长率)
-    + [拉动增长率](#拉动增长率)
-    + [间隔增长率](#间隔增长率)
-    + [年均增长率](#年均增长率)
+    + [增长率（增幅）](#增长率增幅)
+    + [特殊增长率](#特殊增长率)
+      + [名义/实际增长率](#名义实际增长率)
+      + [拉动增长率](#拉动增长率)
+      + [间隔增长率](#间隔增长率)
+      + [年均增长率](#年均增长率)
   + [比重（均值）](#比重均值)
     + [基期比重（均值）](#基期比重均值)
     + [两期比重（均值）](#两期比重均值)
@@ -22,19 +21,13 @@
 
 # 资料分析
 
-## 基础公式
+## 基期、增长量、增长率
+
+### 基期
 
 $$
-\begin{aligned}
-B &= \frac{C}{1+r} \\
-\Delta &= \frac{C}{1+r} \cdot r \\
-r &= \frac{\Delta}{B} = \frac{\Delta}{C - \Delta}
-\end{aligned}
+B = \frac{C}{1+r}
 $$
-
-## 比较与计算
-
-### 基期量
 
 > [!TIP]
 > 当 $|r| \leq 5\%$ 时， $\displaystyle \frac{C}{1+r} = \frac{C(1-r)}{(1+r)(1-r)} \approx C(1-r)$
@@ -43,18 +36,46 @@ $$
 
 ### 增长量
 
-> [!TIP]
+$$
+\Delta = \frac{C}{1+r} \cdot r
+$$
+
+> [!IMPORTANT]
 > $$
-> \left.
 > \Delta = 
 > \begin{cases}
 > \displaystyle\frac{C}{\rho+1}, & r > 0 \\
 > \displaystyle-\frac{C}{\rho-1}, & r < 0
 > \end{cases}
-> \right\} \quad \text{if } |r| = \frac{1}{\rho}
+> \quad \text{where } |r| = \frac{1}{\rho}
 > $$
 
-### 增长率
+> [!TIP]
+> $r > 0$ 时，增长量比较：“**大大则大，一大一小看倍数**”  
+> 
+> 基期 $A$ ，增长率 $a > 0$ ；基期 $B$ ，增长率 $b >0$
+>   + 若 $Aa > Bb$，则 $A$ 的增长量一定大于 $B$
+>   + 若 $Aa \approx Bb$， **在可以用现期代替基期近似估计的情况下**，若 $\displaystyle \frac{A}{B} > \frac{b}{a}$，则 $A$ 的增长量大于 $B$ ；反之，则 $B$ 的增长量大于 $A$ （大的分式分子所代表的量增长量大）
+
+
+> [!TIP]
+> 当 $\boxed{r > 0}$ 时，比较增长量的法则：“**大大则大，一大一小看倍数**”
+>
+> 设基期分别为 $A$ 、 $B$ ，对应增长率为 $a > 0$ 、 $b > 0$ 
+>
+> + 若 $A a > B b$ ，则 $A$ 的增长量大于 $B$ 的增长量
+> + 若 $A a \approx B b$，则在 **可用现期代替基期进行近似估计** 的情况下：
+>   + 若 $\displaystyle \frac{A}{B} > \frac{b}{a}$，则 **$A$ 的增长量大于 $B$**
+>
+>   + 若 $\displaystyle \frac{A}{B} < \frac{b}{a}$，则 **$B$ 的增长量大于 $A$**
+>
+>   + 分式大的一方分子所代表的增长量大
+
+### 增长率（增幅）
+
+$$
+r = \frac{\Delta}{B} = \frac{\Delta}{C - \Delta}
+$$
 
 > [!TIP]
 > $\displaystyle \frac{\Delta}{C}$ 越大， $r$ 越大
@@ -63,9 +84,9 @@ $$
 > r = \frac{1}{\frac{C}{\Delta}-1}
 > $$
 
-## 特殊增长率
+### 特殊增长率
 
-### 名义/实际增长率
+#### 名义/实际增长率
 
 $$
 1 + r_n = (1 + r_r)(1 + \pi)
@@ -77,13 +98,19 @@ $$
 + $r_r$ ：实际增长率
 + $\pi$ ：通货膨胀率
 
-### 拉动增长率
+> [!TIP]
+> 设现期量为 $C$ ，则以不变价格计算的现期量应为
+> $$
+> C' = \frac{C}{1+r_n} \cdot (1+r_r)
+> $$
+
+#### 拉动增长率
 
 $$
 r_{\mathrm{pull}} = \frac{\Delta}{B}
 $$
 
-### 间隔增长率
+#### 间隔增长率
 
 $$
 r_i = \frac{C}{B} -1 = \frac{B \cdot (1+r_1)(1+r_2)}{B} -1 = \boxed{ r_1 + r_2 + r_1 \cdot r_2 }
@@ -91,19 +118,32 @@ $$
 
 + $r_1, r_2$ ：相邻增长率
 
-### 年均增长率
+#### 年均增长率
 
 $$
 r_{\mathrm{avg}} = \sqrt[n]{\frac{C}{B}} - 1
 $$
+
+> [!IMPORTANT]
+>
+> + $n$ 年内某项指标的均值（不含“增长量”）：分母为 $n$
+> + $n$ 年内某项指标的年均增长量或增长率：分母为 $n-1$
+> 
+> 例如：2012–2025年的工资均值分母为14，工资年均增长量/增长率分母为13
 
 ## 比重（均值）
 
 ### 基期比重（均值）
 
 $$
-\frac{A}{1+a} \div \frac{B}{1+b} = \boxed{ \frac{A}{B} \cdot \frac{1+b}{1+a} }
+\frac{A}{1+a} \div \frac{B}{1+b} = \boxed{ \frac{A}{B} \cdot \frac{1+b}{1+a} \underset{|r| \leq 10\%}{\approx} \frac{A}{B} \cdot (1+b-a)}
 $$
+
+> [!TIP]
+> 当 $|r| \leq 10%$时：
+> $$
+> \frac{1+b}{1+a} = \frac{(1+b)(1-a)}{(1+a)(1-a)} = \frac{1+(b-a)-ab}{1-a^2} \approx 1 + (b-a)
+> $$
 
 ### 两期比重（均值）
 
@@ -123,19 +163,19 @@ $$
 
 ![百化分](images/percent2frac.png)
 
-| 百分数 |             分数             | 百分数 |             分数             |
-| :----: | :--------------------------: | :----: | :--------------------------: |
-| 16.7%  | $\displaystyle \frac{1}{6}$  |  5.6%  | $\displaystyle \frac{1}{18}$ |
-| 14.3%  | $\displaystyle \frac{1}{7}$  |  5.3%  | $\displaystyle \frac{1}{19}$ |
-| 12.5%  | $\displaystyle \frac{1}{8}$  |  4.8%  | $\displaystyle \frac{1}{21}$ |
-| 11.1%  | $\displaystyle \frac{1}{9}$  |  4.5%  | $\displaystyle \frac{1}{22}$ |
-|  9.1%  | $\displaystyle \frac{1}{11}$ |  4.3%  | $\displaystyle \frac{1}{23}$ |
-|  8.3%  | $\displaystyle \frac{1}{12}$ |  4.2%  | $\displaystyle \frac{1}{24}$ |
-|  7.7%  | $\displaystyle \frac{1}{13}$ |  3.8%  | $\displaystyle \frac{1}{26}$ |
-|  7.1%  | $\displaystyle \frac{1}{14}$ |  3.7%  | $\displaystyle \frac{1}{27}$ |
-|  6.7%  | $\displaystyle \frac{1}{15}$ |  3.6%  | $\displaystyle \frac{1}{28}$ |
-| 6.25%  | $\displaystyle \frac{1}{16}$ |  3.4%  | $\displaystyle \frac{1}{29}$ |
-|  5.9%  | $\displaystyle \frac{1}{17}$ |  3.3%  | $\displaystyle \frac{1}{30}$ |
+| 百分数 |             分数             | 百分数 |              分数              | 百分数 |             分数             |
+| :----: | :--------------------------: | :----: | :----------------------------: | :----: | :--------------------------: |
+| 16.7%  | $\displaystyle \frac{1}{6}$  | 15.4%  | $\displaystyle \frac{1}{6.5}$  |  5.6%  | $\displaystyle \frac{1}{18}$ |
+| 14.3%  | $\displaystyle \frac{1}{7}$  | 13.3%  | $\displaystyle \frac{1}{7.5}$  |  5.3%  | $\displaystyle \frac{1}{19}$ |
+| 12.5%  | $\displaystyle \frac{1}{8}$  | 11.8%  | $\displaystyle \frac{1}{8.5}$  |  4.8%  | $\displaystyle \frac{1}{21}$ |
+| 11.1%  | $\displaystyle \frac{1}{9}$  | 10.5%  | $\displaystyle \frac{1}{9.5}$  |  4.5%  | $\displaystyle \frac{1}{22}$ |
+|  9.1%  | $\displaystyle \frac{1}{11}$ |  8.7%  | $\displaystyle \frac{1}{11.5}$ |  4.3%  | $\displaystyle \frac{1}{23}$ |
+|  8.3%  | $\displaystyle \frac{1}{12}$ |   8%   | $\displaystyle \frac{1}{12.5}$ |  4.2%  | $\displaystyle \frac{1}{24}$ |
+|  7.7%  | $\displaystyle \frac{1}{13}$ |  7.4%  | $\displaystyle \frac{1}{13.5}$ |  3.8%  | $\displaystyle \frac{1}{26}$ |
+|  7.1%  | $\displaystyle \frac{1}{14}$ |  6.9%  | $\displaystyle \frac{1}{14.5}$ |  3.7%  | $\displaystyle \frac{1}{27}$ |
+|  6.7%  | $\displaystyle \frac{1}{15}$ |  6.5%  | $\displaystyle \frac{1}{15.5}$ |  3.6%  | $\displaystyle \frac{1}{28}$ |
+| 6.25%  | $\displaystyle \frac{1}{16}$ |        |                                |  3.4%  | $\displaystyle \frac{1}{29}$ |
+|  5.9%  | $\displaystyle \frac{1}{17}$ |        |                                |  3.3%  | $\displaystyle \frac{1}{30}$ |
 
 ### 平方数
 
